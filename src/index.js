@@ -8,7 +8,7 @@ const port = 3000;
 const route = require('./routes');
 
 //url tới thư mục public ảnh
-    app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 //Dưới dạng form html
 app.use(
