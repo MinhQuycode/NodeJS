@@ -4,8 +4,6 @@
   "description": "First NodeJs",
   "main": "src/index.js",
   "scripts": {
-    "pre-commit": "lint-staged",
-    "prepare": "husky install",
     "makeUp": "lint-staged",
     "start": "nodemon --inspect src/index.js",
     "watch": "node-sass --watch src/resources/scss/ --output src/public/css/",
@@ -33,7 +31,6 @@
     "src/**/*.{js,scss,json}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
   },
   "devDependencies": {
-    "husky": "^6.0.0",
     "lint-staged": "^11.0.0",
     "morgan": "^1.10.0",
     "node-sass": "^6.0.0",
