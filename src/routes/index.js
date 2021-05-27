@@ -1,10 +1,11 @@
 const newsRouter = require('./news');
 const siteRouter = require('./site');
+const coursesRouter = require('./courses');
 
 function route(app) {
-    //   //url news
+    //url
     app.use('/news', newsRouter);
-
+    app.use('/courses', coursesRouter);
     //Url / để dưới cùng
     app.use('/', siteRouter);
 

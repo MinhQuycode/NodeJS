@@ -3,9 +3,9 @@ const router = express.Router();
 
 const newsController = require('../app/controllers/NewsController');
 // Cấp con của trang news
-router.use('/:slug', newsController.show);
+router.get('/:slug', newsController.show);
 
 //URL gốc để dưới cùng
-router.use('/', newsController.index);
+router.get('/', newsController.index);
 
 module.exports = router;

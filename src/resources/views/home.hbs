@@ -1,1 +1,20 @@
-<h1>Home Page</h1>
+<div class="my-4">
+    <div class="row">
+        {{#each courses}}
+            <div class="col-sm-6 col-lg-4">
+                <div class="card ml-2 mt-2">
+                    <a href="/courses/{{this.slug}}">
+                        <img class="card-img-top" src="{{this.image}}" alt="{{this.name}}">
+                    </a>
+                    <div class="card-body">
+                        <a href="/courses/{{this.slug}}">
+                            <h4 class="card-title">{{this.name}}</h4>
+                        </a>
+                        <p class="card-text" style="min-height: 100px">{{this.description}}</p>
+                        <button class="btn btn-info">Mua khóa học</button>
+                    </div>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</div>
